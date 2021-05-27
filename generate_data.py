@@ -20,8 +20,6 @@ class Graph():
         self.graph[u].pop()
 
     def DFSUtil(self, u, color):
-        # GRAY :    This vertex is being processed (DFS for this vertex has started, but not
-        #           ended (or this vertex is in function call stack)
         color[u] = "GRAY"
         for v in self.graph[u]:
             if color[v] == "GRAY":
@@ -40,8 +38,6 @@ class Graph():
                     return True
         return False
 
-# Driver program to test above functions
-
 g = Graph(N+1)
 copy_g = g
 counter = 0
@@ -57,7 +53,6 @@ for i in range(1000000):
     if g.isCyclic():
         g.delete_wrong(first)
     else:
-     #   g.printAll()
         counter += 1
         copy_g = g
         third = str(first) + " " + str(second) + "\n"
@@ -65,7 +60,6 @@ for i in range(1000000):
     if counter >= int(((N-1) * N) / 4):
         break
 
-print(".")
 if g.isCyclic():
     print("Graph contains cycle")
 else:
