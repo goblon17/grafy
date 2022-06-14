@@ -9,4 +9,6 @@ Kody źródłowe do sprawozdania
 
 Folder [dane](dane) zawierający dane wejściowe, na których były mierzone czasy.
 
+Sprawozdanie w formacie pdf: [document](document.pdf)
+
 Szymon Kaczmarek, nr indeksu 148056
